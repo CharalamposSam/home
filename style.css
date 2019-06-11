@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   width: 100%;
 }
 
@@ -21,11 +22,16 @@ main {
   padding: 10%;
   display: -ms-grid;
   display: grid;
-  justify-items: center;
   grid-row-gap: 50px;
 }
 
-main div {
+main section {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+main section div {
   width: 80%;
   max-width: 300px;
   max-height: 180px;
@@ -37,12 +43,12 @@ main div {
   place-items: center;
 }
 
-main div:hover img {
+main section div:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
 
-main div img {
+main section div img {
   width: 100%;
   display: block;
   -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -54,9 +60,20 @@ main div img {
 }
 
 @media only screen and (max-width: 380px) {
-  main div {
+  main section div {
     max-height: 120px;
   }
+}
+
+main section p {
+  color: white;
+  width: 80%;
+  max-width: 300px;
+  max-height: 180px;
+}
+
+main section span {
+  font-size: 12px;
 }
 
 @media only screen and (min-width: 600px) {
