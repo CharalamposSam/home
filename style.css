@@ -39,7 +39,14 @@ header a {
       -ms-flex-align: center;
           align-items: center;
   font-size: 40px;
-  border: 3px dashed #00ADEE;
+  border: 3px dashed black;
+  -webkit-transition: color .3s ease-in-out, border-color .3s ease-in-out;
+  transition: color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+header a:hover {
+  border-color: #00ADEE;
+  color: #00ADEE;
 }
 
 header a img {
