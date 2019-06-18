@@ -81,6 +81,16 @@ main {
   grid-row-gap: 50px;
 }
 
+@media only screen and ( max-width: 900px ) {
+    padding: 20% 10%;
+}
+@media only screen and ( max-width: 600px ) {
+    padding: 30% 10%;
+}
+@media only screen and ( max-width: 450px ) {
+    padding: 45% 10%;
+}
+
 main section {
   display: -ms-grid;
   display: grid;
