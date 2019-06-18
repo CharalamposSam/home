@@ -81,14 +81,22 @@ main {
   grid-row-gap: 50px;
 }
 
-@media only screen and ( max-width: 900px ) {
+@media only screen and (max-width: 900px) {
+  main {
     padding: 20% 10%;
+  }
 }
-@media only screen and ( max-width: 600px ) {
+
+@media only screen and (max-width: 600px) {
+  main {
     padding: 30% 10%;
+  }
 }
-@media only screen and ( max-width: 450px ) {
+
+@media only screen and (max-width: 450px) {
+  main {
     padding: 45% 10%;
+  }
 }
 
 main section {
@@ -118,6 +126,10 @@ main section div:hover img {
 main section div:hover span {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
+}
+
+main section div a {
+  color: white;
 }
 
 main section div span {
