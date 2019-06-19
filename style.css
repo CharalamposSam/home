@@ -72,9 +72,43 @@ header a img {
 }
 
 main {
+  background-color: #202020;
   width: 100%;
   height: 100%;
-  background-color: #202020;
+}
+
+main .videoTrailer {
+  color: white;
+  padding: 13% 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  main .videoTrailer {
+    padding: 20% 10% 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .videoTrailer {
+    padding: 30% 10% 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  main .videoTrailer {
+    padding: 45% 10% 0;
+  }
+}
+
+main .grid {
+  width: 100%;
+  height: 100%;
   padding: 13% 10%;
   display: -ms-grid;
   display: grid;
@@ -82,30 +116,30 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
-  main {
+  main .grid {
     padding: 20% 10%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  main {
+  main .grid {
     padding: 30% 10%;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  main {
+  main .grid {
     padding: 45% 10%;
   }
 }
 
-main section {
+main .grid section {
   display: -ms-grid;
   display: grid;
   justify-items: center;
 }
 
-main section div {
+main .grid section div {
   width: 80%;
   max-width: 300px;
   max-height: 180px;
@@ -118,21 +152,21 @@ main section div {
   position: relative;
 }
 
-main section div:hover img {
+main .grid section div:hover img {
   -webkit-transform: scale(1.05) rotate(-3deg);
           transform: scale(1.05) rotate(-3deg);
 }
 
-main section div:hover span {
+main .grid section div:hover span {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
 }
 
-main section div a {
+main .grid section div a {
   color: white;
 }
 
-main section div span {
+main .grid section div span {
   all: unset;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
@@ -155,7 +189,7 @@ main section div span {
   left: 0;
 }
 
-main section div img {
+main .grid section div img {
   width: 100%;
   display: block;
   -webkit-transition: -webkit-transform .3s ease-in-out;
@@ -167,12 +201,12 @@ main section div img {
 }
 
 @media only screen and (max-width: 380px) {
-  main section div {
+  main .grid section div {
     max-height: 120px;
   }
 }
 
-main section p {
+main .grid section p {
   color: white;
   width: 80%;
   max-width: 300px;
@@ -187,14 +221,15 @@ main section p {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: relative;
 }
 
-main section span {
+main .grid section span {
   font-size: 12px;
 }
 
 @media only screen and (min-width: 600px) {
-  main {
+  main .grid {
     -ms-grid-rows: (400px)[2];
     -ms-grid-columns: (1fr)[2];
         grid-template: repeat(2, 400px)/repeat(2, 1fr);
@@ -203,7 +238,7 @@ main section span {
 }
 
 @media only screen and (min-width: 900px) {
-  main {
+  main .grid {
     -ms-grid-rows: (400px)[2];
     -ms-grid-columns: (1fr)[3];
         grid-template: repeat(2, 400px)/repeat(3, 1fr);
